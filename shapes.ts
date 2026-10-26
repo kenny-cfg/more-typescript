@@ -1,5 +1,6 @@
 type Circle = {
-  radius: number
+  radius: number,
+  circumference: () => number
 };
 
 type Rectangle = {
@@ -8,7 +9,7 @@ type Rectangle = {
 };
 
 const describeShape = (shape: Circle | Rectangle) => {
-  if ('radius' in shape) {
+  if ('circumference' in shape) {
     // We know shape is a Circle
     console.log('Shape is a circle');
   } else {
@@ -16,7 +17,7 @@ const describeShape = (shape: Circle | Rectangle) => {
   }
 }
 
-const circle = { radius: 1 }
+const circle = { radius: 1, circumference: () => 6.28 }
 const rectangle = { width: 50, height: 12 }
 
 console.log(describeShape(circle));

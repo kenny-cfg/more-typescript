@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "shapes": "ts-node shapes.ts"
+    "shapes": "tsx shapes.ts"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/kenny-cfg/more-typescript#readme",
   "devDependencies": {
-    "ts-node": "^10.9.2",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
