@@ -20,4 +20,4 @@ const describeShape = (shape: Circle | Rectangle) => {
 const circle = { radius: 1, circumference: () => 6.28 }
 const rectangle = { width: 50, height: 12 }
 
-console.log(describeShape(circle));
+describeShape(circle);
